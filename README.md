@@ -1,6 +1,13 @@
 # Physics & Circuit Simulation Resources (Opus 5.5 Related)
 
-整理自 X 和相关来源的物理类、电路类教学仿真资源，适合用于低代码平台搭建仿真教学平台（外部软件先仿真，再填充进平台）。
+整理自 X 和相关来源的物理类、电路类、光学教学仿真资源，适合用于低代码平台搭建仿真教学平台（外部软件先仿真，再填充进平台）。
+
+## 详细资源分类文件（推荐优先查看）
+
+- [university-physics.md](university-physics.md) — 大学级物理仿真（Illini PhysicsSims、PhysicsHub、PhET、OpenStax 等）
+- [optics-resources.md](optics-resources.md) — 光学、光子学、波光学高级仿真（VisuPhy、PhotonLab、optrace、镜头实验室等）
+- [circuits-advanced.md](circuits-advanced.md) — 电路仿真工具与 AI+SPICE 方法（ngspice、Qucs-S、ltspice-mcp、Opus 验证流程）
+- [opus-advanced-models.md](opus-advanced-models.md) — 高级 Opus 5.5 生成的交互仿真与模型（airsup.ai/lab、OpenPhysicsAI、Ryan Sael 等）
 
 ## 1. 交互式 3D 物理教学资源（强烈推荐 - Techartist）
 
@@ -46,9 +53,10 @@
 | 工具 | 用途 | 链接 |
 |------|------|------|
 | Falstad Circuit Simulator / CircuitJS | 网页电路仿真（教学神器） | https://www.falstad.com/circuit/ |
-| LTspice / ngspice / SPICE OPUS | 专业电路仿真 | https://www.spiceopus.si/ |
+| LTspice / ngspice / SPICE OPUS / Qucs-S | 专业电路仿真 | https://github.com/ra3xdh/qucs_s |
 | PhET Interactive Simulations | 物理教学经典 | https://phet.colorado.edu/ |
 | MATLAB / Simulink | 复杂物理/电路模型 | - |
+| VisuPhy / PhotonLab | 光学与波光学 | https://www.visuphy.org/ |
 
 ## 4. 其他相关 Opus 5.5 仿真示例
 
@@ -56,19 +64,21 @@
 - NVIDIA GPU 历代拆解
 - PS5 手柄完整拆解
 - 跳水物理仿真对比等
+- 更多见 [opus-advanced-models.md](opus-advanced-models.md)
 
 ## 使用建议（低代码平台教学仿真平台）
 
-1. 用外部工具（Falstad、LTspice、PhET 等）先做好核心仿真实验。
-2. 导出视频、数据、图表、动画。
+1. 用外部工具（Falstad、LTspice、PhET、VisuPhy 等）先做好核心仿真实验。
+2. 导出视频、数据、图表、动画，或直接嵌入浏览器仿真。
 3. 填充进泛微 E10 / E-Builder 平台：
-   - 页面嵌入视频/图片
+   - 页面嵌入视频/图片/iframe
    - 数据导入报表
    - 参数表单 + 预跑结果
    - AI 知识库讲解原理
    - 课程管理与流程
+4. 用 Opus 5.5 生成定制交互 3D 解释器或 SPICE 验证电路，增强教学互动性。
 
 ---
 
-整理时间：2026-11-18  
+整理时间：2026-11-18（已大幅扩展）  
 用途：云端杯低代码+AI 平台应用搭建创新大赛 - 仿真教学平台参考
